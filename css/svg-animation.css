@@ -1,0 +1,133 @@
+#box-svg,
+#letter-svg,
+#letter-2-svg,
+#creature-svg {
+    top: 5%;
+}
+
+#player-svg {
+    bottom: 3%;
+    left: 5%;
+    max-width: 19rem;
+    height: auto;
+    animation: player-float 5s ease-in-out infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%  ;
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+}
+
+#box-svg {
+
+    max-width: 11rem;
+    height: auto;
+    right: 0.5rem;
+    animation: letter-float 8s ease-in-out infinite ;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+}
+
+#letter-svg {
+
+    max-width: 8rem;
+    height: auto;
+    right: 9rem;
+    top: 5rem;
+    animation: letter-float 5s ease infinite ;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+}
+
+#letter-2-svg {
+    max-width: 5rem;
+    height: auto;
+    top: 9rem;
+    right: 15rem;
+    animation: letter-float 7s ease infinite ;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+}
+
+#creature-svg {
+    display: none;
+    max-width: 17rem;
+    height: auto;
+    top: 1.5%;
+    right: 5%;
+    animation: creature-breathe 3s ease-in-out infinite alternate-reverse;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin:50% 100%;
+    -o-transform-origin:50% 100%  ;
+    transform-origin:50% 100%;
+    transform-box: fill-box;
+}
+#creature-eye-right,#creature-eye-left{
+    animation: creature-blink 5s ease-in-out infinite alternate-reverse;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin:50% 50%;
+    -o-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+}
+
+
+@keyframes player-float {
+    0%{
+        transform: rotate(-6deg) translateY(-0.5rem);
+    } 
+    50%{
+        transform: rotate(6deg) translateY(0.5rem);
+    }
+    100%{
+        transform: rotate(-6deg) translateY(-0.5rem);
+    }
+}
+
+@keyframes creature-breathe{
+    from{
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(1.05);
+    }
+}
+@keyframes letter-float{
+    0%{
+        transform: translateY(-0.5rem);
+    }
+    50%{
+        transform: translateY(0.5rem) ;
+    }
+    100%{
+        transform: translateY(-0.5rem) ;
+    }
+}
+
+
+@keyframes creature-blink{
+    0%{
+        transform: scaleY(1);
+    }
+    45%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0.1);
+    }
+    55%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
