@@ -4,6 +4,8 @@
     --page-background: #0C1E2C;
     --athiktos-theme-color-1: rgba(154, 234, 221, 1);
     --athiktos-theme-color-2: rgba(0, 23, 54, 1);
+    --sfuAnimeClub-theme-color-1: rgba(13, 82, 124, 1);
+    --sfuAnimeClub-theme-color-2: rgba(144, 33, 76, 1);
     --home-page-animation-background-color: #685D7E;
 }
 
@@ -121,21 +123,19 @@ img {
 #main-p {
     font-size: 1.5rem;
 }
-#about{
-    background: rgb(12,30,44);
-    background: linear-gradient(180deg, rgba(12,30,44,1) 0%, rgba(240,115,115,1) 100%);
+
+#about {
+    background: rgb(12, 30, 44);
+    background: linear-gradient(180deg, rgba(12, 30, 44, 1) 0%, rgba(240, 115, 115, 1) 100%);
 }
 
-#athiktos {
-    /* background: #4144a6; */
 
-    /* gradient genereated from: https://cssgradient.io/ */
-    background: var(--athiktos-theme-color-1);
-    background: linear-gradient(178deg, var(--athiktos-theme-color-1) 0%, var(--athiktos-theme-color-2) 100%);
+.project-preview {
     padding: 1.2rem 0;
     color: white;
     overflow: hidden;
 }
+
 
 #main-text {
     z-index: 1000;
@@ -199,6 +199,7 @@ h2 {
 h3 {
     font-size: 3.5rem;
     margin: 1.2rem 0;
+    max-width: 30rem;
 }
 
 .vertically-centered {
@@ -212,6 +213,7 @@ h3 {
 
 .grid {
     display: grid;
+    position: relative;
 }
 
 .main-banner-link {
@@ -221,6 +223,35 @@ h3 {
 #athiktos {
     position: relative;
     min-height: 60rem;
+    background: var(--athiktos-theme-color-1);
+    background: linear-gradient(178deg, var(--athiktos-theme-color-1) 0%, var(--athiktos-theme-color-2) 100%);
+}
+
+#athiktos p,
+#athiktos-banner p,
+#athiktos h3,
+#athiktos-banner h1 {
+    text-shadow: 0 0 5px var(--athiktos-theme-color-2);
+}
+
+#sfuAnimeClub {
+    position: relative;
+    min-height: 60rem;
+    background: var(--sfuAnimeClub-theme-color-1);
+    background: linear-gradient(178deg, var(--sfuAnimeClub-theme-color-1) 0%, var(--sfuAnimeClub-theme-color-2) 100%);
+}
+
+#sfuAnimeClub p,
+#sfuAnimeClub-banner p,
+#sfuAnimeClub h3,
+#sfuAnimeClub-banner h1 {
+    text-shadow: 0 0 5px var(--sfuAnimeClub-theme-color-1);
+}
+
+.sfuAnimeClub-link {
+    font-size: 1.3rem;
+    background: #b54e66;
+    color: white;
 }
 
 .svg-decro {
@@ -303,9 +334,9 @@ h3 {
 
 #athiktos-process {
     padding: 0.5rem 0.5rem;
-    background: rgb(0,23,54);
-background: linear-gradient(180deg,  var(--athiktos-theme-color-2) 0%, rgba(89,136,129,1) 100%);
-    
+    background: rgb(0, 23, 54);
+    background: linear-gradient(180deg, var(--athiktos-theme-color-2) 0%, rgba(89, 136, 129, 1) 100%);
+
 }
 
 .project-media {
@@ -387,22 +418,25 @@ section.project-section {
 }
 
 
-#animation {
+#animation,
+#illustration {
     margin: 0%;
     padding: 1rem 0.5rem;
     /* background: #332e65; */
-    background: rgb(51,46,101);
-background: linear-gradient(90deg, rgba(51,46,101,1) 52%, rgba(137,153,222,1) 100%);
+    background: rgb(51, 46, 101);
+    background: linear-gradient(90deg, rgba(51, 46, 101, 1) 52%, rgba(137, 153, 222, 1) 100%);
     border-top: 0.3rem solid #e4eff2;
     border-bottom: 0.3rem solid #e4eff2;
 }
 
-.project-preview-video {
+.project-preview-video,
+.project-preview-img {
     border-radius: 2rem;
     box-shadow: 0px 0px 20px #38364291;
     max-width: 35rem;
     height: auto;
 }
+
 
 #name-nav {
     width: auto;

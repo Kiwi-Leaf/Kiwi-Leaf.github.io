@@ -12,9 +12,9 @@
     height: auto;
     animation: player-float 5s ease-in-out infinite;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%  ;
-    transform-origin:50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
 }
 
@@ -23,11 +23,11 @@
     max-width: 11rem;
     height: auto;
     right: 0.5rem;
-    animation: letter-float 8s ease-in-out infinite ;
+    animation: letter-float 8s ease-in-out infinite;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
 }
 
@@ -37,11 +37,11 @@
     height: auto;
     right: 9rem;
     top: 5rem;
-    animation: letter-float 5s ease infinite ;
+    animation: letter-float 5s ease infinite;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
 }
 
@@ -50,11 +50,11 @@
     height: auto;
     top: 9rem;
     right: 15rem;
-    animation: letter-float 7s ease infinite ;
+    animation: letter-float 7s ease infinite;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
 }
 
@@ -66,68 +66,119 @@
     right: 5%;
     animation: creature-breathe 3s ease-in-out infinite alternate-reverse;
     -webkit-transform-origin: 50% 100%;
-    -moz-transform-origin:50% 100%;
-    -o-transform-origin:50% 100%  ;
-    transform-origin:50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
     transform-box: fill-box;
 }
-#creature-eye-right,#creature-eye-left{
+
+#creature-eye-right,
+#creature-eye-left {
     animation: creature-blink 5s ease-in-out infinite alternate-reverse;
     -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin:50% 50%;
-    -o-transform-origin:50% 50%;
-    transform-origin:50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     transform-box: fill-box;
+}
+
+#ayumi-svg {
+    max-width: 14rem;
+    height: auto;
+    right: 1rem;
+    top: 1rem;
+    animation: anime-character-float 4s ease-in-out infinite alternate-reverse;
+}
+
+#ren-svg {
+    max-width: 15rem;
+    height: auto;
+    bottom: 3rem;
+    left: 2rem;
+    display: none;
+    animation: anime-character-float 3s ease-in-out infinite alternate-reverse;
+}
+
+#raccoon-svg {
+    max-width: 13rem;
+    height: auto;
+    top: 4rem;
+    left: 5rem;
+    display: none;
+}
+
+@keyframes anime-character-float {
+    0% {
+        transform: translateY(0.2rem);
+    }
+
+    50% {
+        transform: translateY(-0.2rem);
+    }
+
+    100% {
+        transform: translateY(0.2rem)
+    }
 }
 
 
 @keyframes player-float {
-    0%{
+    0% {
         transform: rotate(-6deg) translateY(-0.5rem);
-    } 
-    50%{
+    }
+
+    50% {
         transform: rotate(6deg) translateY(0.5rem);
     }
-    100%{
+
+    100% {
         transform: rotate(-6deg) translateY(-0.5rem);
     }
 }
 
-@keyframes creature-breathe{
-    from{
+@keyframes creature-breathe {
+    from {
         transform: scaleY(1);
     }
+
     to {
         transform: scaleY(1.05);
     }
 }
-@keyframes letter-float{
-    0%{
+
+@keyframes letter-float {
+    0% {
         transform: translateY(-0.5rem);
     }
-    50%{
-        transform: translateY(0.5rem) ;
+
+    50% {
+        transform: translateY(0.5rem);
     }
-    100%{
-        transform: translateY(-0.5rem) ;
+
+    100% {
+        transform: translateY(-0.5rem);
     }
 }
 
 
-@keyframes creature-blink{
-    0%{
+@keyframes creature-blink {
+    0% {
         transform: scaleY(1);
     }
-    45%{
+
+    45% {
         transform: scaleY(1);
     }
-    50%{
+
+    50% {
         transform: scaleY(0.1);
     }
-    55%{
+
+    55% {
         transform: scaleY(1);
     }
-    100%{
+
+    100% {
         transform: scaleY(1);
     }
 }
