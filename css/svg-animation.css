@@ -88,6 +88,7 @@
     right: 1rem;
     top: 1rem;
     animation: anime-character-float 4s ease-in-out infinite alternate-reverse;
+    display: none;
 }
 
 #ren-svg {
@@ -96,7 +97,7 @@
     bottom: 3rem;
     left: 2rem;
     display: none;
-    animation: anime-character-float 3s ease-in-out infinite alternate-reverse;
+    animation: anime-character-float 3s ease-in-out infinite alternate;
 }
 
 #raccoon-svg {
@@ -105,6 +106,65 @@
     top: 4rem;
     left: 5rem;
     display: none;
+    animation: raccoon-animation 6s ease-in-out infinite;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+#Raccoon-Tail {
+    animation: raccoon-tail-animation 3s ease-in-out infinite alternate;
+    -webkit-transform-origin: 100% 85%;
+    -moz-transform-origin: 100% 85%;
+    -o-transform-origin: 100% 85%;
+    transform-origin: 100% 85%;
+}
+
+#Ren-Arm-L-group {
+    animation: ren-arm-L-animation 5s ease-in-out infinite alternate-reverse;
+    -webkit-transform-origin: 35% 52%;
+    -moz-transform-origin: 35% 52%;
+    -o-transform-origin: 35% 52%;
+    transform-origin: 35% 52%;
+}
+
+#Ren-Arm-R-group {
+    animation: ren-arm-R-animation 5s ease-in-out infinite alternate;
+    -webkit-transform-origin: 50% 53%;
+    -moz-transform-origin: 50% 53%;
+    -o-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+}
+
+
+
+@keyframes ren-arm-R-animation {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    55% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes ren-arm-L-animation {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    55% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
 }
 
 @keyframes anime-character-float {
@@ -118,6 +178,62 @@
 
     100% {
         transform: translateY(0.2rem)
+    }
+}
+
+@keyframes raccoon-tail-animation {
+    0% {
+        translate: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(13deg);
+    }
+}
+
+@keyframes raccoon-animation {
+    0% {
+        transform: translateY(0rem);
+    }
+
+    25% {
+        transform: scaleY(1) scaleX(1) translateY(0.25rem);
+    }
+
+    27% {
+        transform: scaleY(0.8) scaleX(1.2) translateY(0.27rem);
+    }
+
+    32% {
+        transform: scaleY(1.3) scaleX(0.85) translate(0.32rem);
+    }
+
+    35% {
+        transform: scaleY(0.9) scaleX(1.1) translateY(0.35rem);
+    }
+
+    37% {
+        transform: scaleY(1) scaleX(1) translateY(0.37rem);
+    }
+
+    50% {
+        transform: translateY(0.5rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+
+
+}
+
+@keyframes rotate-around-point {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 

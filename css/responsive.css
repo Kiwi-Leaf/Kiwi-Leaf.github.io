@@ -9,9 +9,11 @@
         font-size: 2rem;
     }
 
-    #ayumi-svg {
+    .project-preview #ayumi-svg {
         max-width: 20rem;
+        display: block;
     }
+
 }
 
 @media (min-width:39rem) {
@@ -38,7 +40,7 @@
         display: none;
     }
 
-    #ren-svg {
+    .project-preview #ren-svg {
         display: block;
     }
 
@@ -61,6 +63,7 @@
     #athiktos-process {
         padding: 2rem 2rem;
     }
+
 
 
 
@@ -89,6 +92,8 @@
     .project-process p {
         max-width: 50rem;
     }
+
+
 }
 
 @media (min-width:53rem) {
@@ -101,10 +106,26 @@
     .main-banner-video {
         display: block;
     }
+
+    #sfuAnimeClub-banner #ayumi-svg,
+    #sfuAnimeClub-banner #ren-svg {
+        display: block;
+
+    }
+
+    #sfuAnimeClub-banner #ren-svg {
+        bottom: 0rem;
+    }
+
+    #sfuAnimeClub-banner #ayumi-svg {
+        max-width: 18rem;
+    }
 }
 
 @media (min-width:64rem) {
     /* ~1024px */
+
+
 
     .about-grid,
     .works-grid,
@@ -121,12 +142,26 @@
         left: 5rem;
     }
 
-    #ren-svg {
+    .project-preview #ren-svg {
         left: 30%;
     }
 
-    #raccoon-svg {
+    #sfuAnimeClub-banner #ren-svg {
+        left: 3rem;
+
+        max-width: 15rem;
+    }
+
+
+
+
+    .project-preview #raccoon-svg {
         display: block;
+    }
+
+    #sfuAnimeClub-banner #raccoon-svg {
+        bottom: 2rem;
+        right: 3rem;
     }
 
     #box-svg,
@@ -195,7 +230,7 @@
 
     }
 
-    #ren-svg {
+    .project-preview #ren-svg {
         max-width: 20rem;
     }
 
@@ -215,6 +250,7 @@
         left: 10rem;
     }
 
+
     #ren-svg {
         left: 35%;
 
@@ -230,9 +266,11 @@
 
     }
 
-    #ren-svg {
+    .project-preview #ren-svg {
         left: 40%;
         max-width: 20rem;
     }
+
+
 
 }

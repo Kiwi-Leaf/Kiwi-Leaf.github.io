@@ -339,6 +339,19 @@ h3 {
 
 }
 
+#sfuAnimeClub-banner {
+    background: var(--sfuAnimeClub-theme-color-1);
+    background: linear-gradient(178deg, var(--sfuAnimeClub-theme-color-1) 0%, var(--sfuAnimeClub-theme-color-2) 100%);
+    overflow: hidden;
+}
+
+#sfuAnimeClub-process {
+    padding: 0.5rem 0.5rem;
+    background: var(--sfuAnimeClub-theme-color-2);
+    background: linear-gradient(180deg, var(--sfuAnimeClub-theme-color-2) 0%, var(--sfuAnimeClub-theme-color-1) 100%);
+
+}
+
 .project-media {
     max-width: 100%;
     height: auto;
