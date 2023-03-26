@@ -254,6 +254,12 @@ h3 {
     color: white;
 }
 
+.sfuAnimeClub-link:hover,
+.sfuAnimeClub-link:focus {
+    background: #ed7a2d;
+    color: white;
+}
+
 .svg-decro {
     position: absolute;
 }
